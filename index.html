@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELÁROMÍ | Schedule Your Consultation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-panel">
+    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&h=1000&fit=crop" alt="Bridal Collection">
+  </div>
+  <div class="booking-area">
+    <div class="card">
+      <div class="brand">
+        <div class="mark">✦</div>
+        <div class="logo">ELÁROMÍ</div>
+        <div class="logo-line"></div>
+        <div class="tagline">Bespoke & Bridal Couture</div>
+      </div>
+
+      <h1>Schedule Your Consultation</h1>
+      
+      <div class="policy">
+        <p>This consultation fee is non-refundable but will be fully deducted from your final invoice if you decide to move forward. To confirm this appointment, a fee of ₦20,000 is required.</p>
+      </div>
+
+      <div class="calendar-header">
+        <button class="arrow" id="prevBtn" onclick="previousMonth()">‹</button>
+        <div class="month" id="monthDisplay"></div>
+        <button class="arrow" id="nextBtn" onclick="nextMonth()">›</button>
+      </div>
+
+      <div class="weekdays">
+        <div>SUN</div>
+        <div>MON</div>
+        <div>TUE</div>
+        <div>WED</div>
+        <div>THU</div>
+        <div>FRI</div>
+        <div>SAT</div>
+      </div>
+
+      <div class="calendar" id="calendar"></div>
+
+      <div class="legend">
+        <span><div class="dot"></div>Available</span>
+        <span><div class="dot booked"></div>Fully booked</span>
+        <span><div class="dot selected"></div>Selected</span>
+      </div>
+
+      <div id="slotsSection">
+        <div class="slot-heading" id="slotDate"></div>
+        <div class="slots" id="slots"></div>
+      </div>
+
+      <div class="summary" id="summary">
+        <div class="row">
+          <span>Date:</span>
+          <span id="summaryDate"></span>
+        </div>
+        <div class="row">
+          <span>Time:</span>
+          <span id="summaryTime"></span>
+        </div>
+        <div class="row">
+          <span>Consultation Fee:</span>
+          <span>₦20,000</span>
+        </div>
+        <div class="row total">
+          <span>Total:</span>
+          <span>₦20,000</span>
+        </div>
+        <button class="checkout" onclick="proceedToCheckout()">Proceed to Payment</button>
+        <div class="notice">
+          Your appointment is only confirmed after successful payment.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  ELÁROMÍ · CRAFTED WITH PURPOSE. DESIGNED FOR YOU.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
